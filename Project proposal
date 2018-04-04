@@ -1,0 +1,10 @@
+PROJECT IDEA
+Our objective is to design an app for women to find other women in their same general area, with the same destination as them, so they can travel together and don’t have to feel unsafe going home alone at night.
+
+HOW IT WILL WORK
+Each woman will register in the app, and when she logs in, there will be an interface with all the events available in the area.
+We understand events as information that users upload, telling where they want to meet and where they want to go, and the time for meeting.
+
+We will implement a way for security, which consists on a picture of yourself doing a determinated gesture before joining an event.
+
+There will be a PANIC! button which can be pushed in a case of extreme emergency for calling the police.
