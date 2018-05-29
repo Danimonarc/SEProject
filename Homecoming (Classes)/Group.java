@@ -41,8 +41,7 @@ public abstract class Group {
 		return hour;
 	}
 	
-	public abstract void callPolice() {
-		
+	public void callPolice() {
 	}
 	
 	public static int getMembers() {
@@ -66,7 +65,7 @@ public abstract class Group {
 		request.loquesea(members.size());
 	}
 	
-	public abstract void notification() {
+	public abstract void notification();
 		
-	}	
+		
 }
