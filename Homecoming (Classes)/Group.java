@@ -44,7 +44,7 @@ public abstract class Group {
 	public void callPolice() {
 	}
 	
-	public static int getMembers() {
+	public List<User> getMembers() {
 		return members;
 	}
 	
