@@ -62,10 +62,13 @@ public abstract class Group {
 	}
 	
 	public void acceptRequest(Request request) {
-		request.loquesea(members.size());
+		requests.loquesea(members.size());
 	}
 	
 	public abstract void notification();
-		
+	
+	public void addRequest (Request newrequest) {
+		requests.add(newrequest);
+	}
 		
 }
