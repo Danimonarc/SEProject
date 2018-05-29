@@ -19,9 +19,9 @@ public class User {
 		}
 	}
 	
-	public void createRequest(Image signPhoto, Group g){
-		Request r = new Request(signPhoto);
-		r.sendRequest(r, g);
+	public void createRequest(Image signPhoto, Group g, User me){
+		Request r = new Request(signPhoto, g, me);
+		r.sendRequest(r);
 	}
 	
 	public void createMessage(String text){
