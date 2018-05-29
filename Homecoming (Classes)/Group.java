@@ -1,9 +1,9 @@
-	import java.awt.Image;
+import java.awt.Image;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Group {
+public class Group {
 	private LocalTime hour;
 	private String place;
 	private String destination;
@@ -19,7 +19,7 @@ public abstract class Group {
 		destination = d;
 		members = new ArrayList<User>(MAX_MEMBERS);  
 		members.add(creator);
-		requests = new ArrayList><Request>(MAX_MEMBERS);
+		requests = new ArrayList<Request>(MAX_MEMBERS);
 		
 		//map= SACAR DE LA BASE DE DATOS
 		
@@ -42,6 +42,7 @@ public abstract class Group {
 	}
 	
 	public void callPolice() {
+		
 	}
 	
 	public List<User> getMembers() {
@@ -62,13 +63,14 @@ public abstract class Group {
 	}
 	
 	public void acceptRequest(Request request) {
-		requests.loquesea(members.size());
+		request.loquesea(members.size());
 	}
 	
-	public abstract void notification();
+	public void notification() {
+		
+	}
 	
 	public void addRequest (Request newrequest) {
 		requests.add(newrequest);
 	}
-		
 }
