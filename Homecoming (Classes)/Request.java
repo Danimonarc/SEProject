@@ -1,23 +1,18 @@
 import java.awt.Image;
-import java.io.File;
 
 public class Request {
 	private Image photo;
 	private boolean requestStatus;
 	private int cont;
-	private Group group;
-	private User user;
+	private static Group group;
+	private static User user;
 	
 	public Request(Image photo, Group group, User user) {
 		this.photo = photo;
 		requestStatus = false;
 		cont = 0;
-		this.group = group;
-		this.user = user;
-	}
-	
-	public static void sendRequest(Request request) {
-		group.addRequest(request);
+		Request.group = group;
+		Request.user = user;
 	}
 	
 	public void generatePose() {
