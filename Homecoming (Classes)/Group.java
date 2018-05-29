@@ -17,9 +17,9 @@ public abstract class Group {
 		hour = h;
 		place = p;
 		destination = d;
-		members = new ArrayList(MAX_MEMBERS);  
+		members = new ArrayList<User>(MAX_MEMBERS);  
 		members.add(creator);
-		requests = new ArrayList(MAX_MEMBERS);
+		requests = new ArrayList><Request>(MAX_MEMBERS);
 		
 		//map= SACAR DE LA BASE DE DATOS
 		
