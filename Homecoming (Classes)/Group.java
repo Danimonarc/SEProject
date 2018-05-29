@@ -41,8 +41,8 @@ public class Group {
 		return hour;
 	}
 	
-	public void callPolice() {
-		//postureo
+	public abstract void callPolice() {
+		
 	}
 	
 	public static int getMembers() {
@@ -65,4 +65,8 @@ public class Group {
 	public void acceptRequest(Request request) {
 		request.loquesea(members.size());
 	}
+	
+	public abstract void notification() {
+		
+	}	
 }
