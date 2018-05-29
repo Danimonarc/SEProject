@@ -3,7 +3,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Group {
+public abstract class Group {
 	private LocalTime hour;
 	private String place;
 	private String destination;
