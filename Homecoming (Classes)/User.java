@@ -1,5 +1,6 @@
 import java.util.Date;
 import java.awt.Image;
+import java.awt.List;
 import java.time.LocalTime;
 
 public class User {
@@ -19,17 +20,17 @@ public class User {
 		}
 	}
 	
-	public void createRequest(Image signPhoto, Group g, User me){
-		Request r = new Request(signPhoto, g, me);
-		r.sendRequest(r);
+	public void createRequest(Image signPhoto, Group group, User me){
+		Request request = new Request(signPhoto, group, me);
+		group.addRequest(request);
 	}
 	
 	public void createMessage(String text){
 		Message msg = new Message(text);
 	}
 	
-	public void createGroup(LocalTime hour, String origin, String destination){
-		Group g = new Group(hour, origin, destination);
+	public void createGroup(LocalTime hour, String origin, String destination, User me){
+		Group g = new Group(hour, origin, destination, me);
 	}
 	
 	public void reportUser(User user, String report){
@@ -67,32 +68,4 @@ public class User {
 			throw new IndexOutOfBoundsException();
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
