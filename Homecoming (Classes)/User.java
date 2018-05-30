@@ -1,9 +1,12 @@
+package Clases;
+
 import java.util.Date;
 import java.awt.Image;
 import java.awt.List;
 import java.time.LocalTime;
 
 public class User {
+	
 	private String name, surname;
 	private Date dateOfBirth;
 	private Image photo;
@@ -11,7 +14,7 @@ public class User {
 	private static final int MAX_STRIKES = 3;
 	private double rating;
 	
-	public List<Group> search(LocalTime hour, String origin, String destination){
+/*	public List<Group> search(LocalTime hour, String origin, String destination){
 		//QUEEEEEEERY
 		for(Group aux : ListGroups){
 			if(hour.equals(aux.hour) && origin.equals(aux.origin) && destination.equals(aux.destination)){
@@ -19,7 +22,7 @@ public class User {
 			}
 		}
 	}
-	
+*/	
 	public void createRequest(Image signPhoto, Group group, User me){
 		Request request = new Request(signPhoto, group, me);
 		group.addRequest(request);
@@ -33,7 +36,7 @@ public class User {
 		Group g = new Group(hour, origin, destination, me);
 	}
 	
-	public void reportUser(User user, String report){
+/*	public void reportUser(User user, String report){
 		// Query for users
 		for(User aux : UsersList){
 			if(aux.equals(user)){
@@ -47,7 +50,8 @@ public class User {
 			}
 		}
 	}
-	
+*/
+	/*
 	public void ReportArea(String s){
 		//query para las zonas
 		for(Point aux : ListaZonasConflictivas){
@@ -59,7 +63,7 @@ public class User {
 			}
 		}
 	}
-	
+*/	
 	public void rateUser(User user, int rate){
 		if(rate>=0 && rate<=5){
 			//Calcular media mediante query y updatear rate;

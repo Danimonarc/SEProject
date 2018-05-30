@@ -1,3 +1,4 @@
+package Clases;
 
 public class Message {
 	
@@ -6,5 +7,4 @@ public class Message {
 	public Message(String t) {
 		t = Text;
 	}
-
 }

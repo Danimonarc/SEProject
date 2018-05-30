@@ -1,17 +1,18 @@
+package Clases;
 import java.awt.Image;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Group {
-	private LocalTime hour;
-	private String place;
-	private String destination;
-	private List<User> members;
-	private Image map;
-	private List<Request> requests;
+	public LocalTime hour;
+	public String place;
+	public String destination;
+	public List<User> members;
+	public Image map;
+	public List<Request> requests;
 	
-	private static final int MAX_MEMBERS = 20;
+	public static final int MAX_MEMBERS = 20;
 	
 	public Group (LocalTime h, String p, String d, User creator) {
 		hour = h;
