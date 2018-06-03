@@ -16,7 +16,4 @@
 -		e.expectMessage("Index: 0, Size: 0");
 -		l.get(0); //Throws Exception
 -	}
--	
- 	@Test
- 	public void test() {
- 		fail("Not yet implemented");
+
